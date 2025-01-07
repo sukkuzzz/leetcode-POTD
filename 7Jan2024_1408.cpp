@@ -68,4 +68,8 @@ int main()
     vector<string> words(n);
     for (int i = 0; i < n; ++i)
         cin >> words[i];
+    vector<string> ans = stringMatching(words);
+    for (int i = 0; i < ans.size(); ++i)
+        cout << ans[i] << " ";
+    return 0;
 }
